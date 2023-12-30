@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travels and Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding-top: 30px;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"], input[type="password"] ,input[type="email"]{
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            background-color: #007bff;
+            color: #356312;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="/travels" method="post">
+        <h2>Travels and Booking</h2>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br>
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" placeholder="Enter your destination" required>
+        <br>
+        <label for="departureDate">Departure Date:</label>
+        <input type="date" id="departureDate" name="departureDate" required>
+
+        <label for="travelClass">Travel Class:</label>
+        <select id="travelClass" name="travelClass" required>
+            <option value="economy">Economy</option>
+            <option value="business">Business</option>
+            <option value="firstClass">First Class</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <button type="submit" style="margin-left: 220px;">Book Now</button>
+    </form>
+
+    <p>
+        If you have any questions or need assistance with your booking, please contact our customer support at [Your Phone Number] or [Your Email Address].
+    </p>
+</body>
+</html>
